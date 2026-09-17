@@ -10,8 +10,8 @@ openapi:
 ---
 
 Derivatives market structure recorded around the clock and sold per call.
-Thirteen paid endpoints, all `GET`, all answering `402` with an x402 v2
-challenge:
+All paid endpoints are `GET` and answer `402` with an x402 v2 challenge. The
+thirteen below are documented here; `GET /api/x402` lists every live route:
 
 | Endpoint | Price | Returns |
 |---|---|---|
@@ -35,7 +35,8 @@ facilitator. No account, no signup, no API key. `GET /api/x402` is free and
 returns the machine-readable catalog of prices and rails.
 
 Most paid endpoints have a free counterpart under `/api/public/*` that carries
-the live snapshot. What is sold here is depth and history, not the current
+the live snapshot. Programs read those with a free account key
+(https://bykaranteli.com/dashboard/api); the paid routes need none. What is sold here is depth and history, not the current
 value.
 
 ## Spend-aware usage
