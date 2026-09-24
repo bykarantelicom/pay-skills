@@ -17,28 +17,31 @@ route-specific ones) are in `openapi.json` next to this file, and the free
 
 | Endpoint | Price | Returns |
 |---|---|---|
-| `/api/x402/liqmap-levels` | $0.005 | Liquidation map for one Binance USDT-M perp: modeled leverage clusters plus real `forceOrder` levels across Binance, Bybit, OKX, Gate, HTX and Hyperliquid, top magnets, funding, OI and orderbook context. |
-| `/api/x402/liquidations-raw` | $0.010 | Individual liquidation events from our own sockets on Binance, Bybit, OKX, Gate, HTX, dYdX and Aster: side, price, quantity, notional, venue and millisecond timestamp. |
-| `/api/x402/funding-history` | $0.005 | Settled funding rates per venue and settlement, the series behind carry and basis work. |
-| `/api/x402/oi-history` | $0.005 | Five-minute open interest for the major perpetuals in base units and USD. |
-| `/api/x402/positioning-history` | $0.005 | Hourly long/short account and position ratios and taker buy/sell ratios for the 30 most traded perps. |
-| `/api/x402/options-flow` | $0.005 | BTC or ETH options tape from Deribit and OKX: daily premium-flow history plus the full big-print list. |
-| `/api/x402/options-oi-history` | $0.005 | Daily listed options open interest per instrument: strike, expiry, type, OI, mark IV, underlying price and traded notional. |
-| `/api/x402/orderbook-history` | $0.005 | Five-minute spot order book depth per venue for ten majors, binned into 0.1% buckets within 20% of mid. |
-| `/api/x402/spot-microstructure` | $0.010 | Minute bars with the taker buy versus total quote volume split, pre-joined across venues. |
-| `/api/x402/flow-vpin` | $0.002 | VPIN order-flow toxicity for BTC, ETH and SOL: 90-day daily track plus the last 500 volume buckets. |
-| `/api/x402/whale-trades-raw` | $0.002 | Every $1M+ aggressive print from our own trade sockets, kept 90 days. |
-| `/api/x402/hl-whale-events` | $0.005 | Position changes of the 300 largest Hyperliquid accounts: opened, closed, increased, reduced, flipped. |
-| `/api/x402/leverage-tiers-history` | $0.005 | Every recorded version of each perpetual's leverage ladder per venue, so leverage cuts can be dated. |
-| `/api/x402/networks-history` | $0.005 | Every recorded version of each venue's deposit and withdrawal network rows, so suspensions can be dated. |
-| `/api/x402/venue-markets-history` | $0.005 | Ten-minute price, 24h volume, open interest and funding snapshots per venue and symbol. |
-| `/api/x402/jupiter-history` | $0.005 | Hourly Jupiter Perps history per market and metric, including on-chain long and short open interest. |
-| `/api/x402/rsi-history` | $0.002 | Hourly RSI(14) history for Binance USDT perpetuals on eight intervals. |
-| `/api/x402/tradfi-oi-history` | $0.005 | Five-minute open interest for the top 40 Binance TradFi perpetuals. |
-| `/api/x402/tradfi-funding-history` | $0.005 | Settled funding rates for the top 40 Binance TradFi perpetuals. |
-| `/api/x402/turkey-premium-history` | $0.005 | Minute history of the Turkey premium index built from Turkish spot venues, with optional per-venue book rows. |
-| `/api/x402/cot-history` | $0.005 | Weekly CFTC Commitments of Traders history for crypto futures, including the dealer books. |
-| `/api/x402/indicators-events` | $0.005 | Every Bitcoin cycle indicator crossing since 2012 with the forward 7 to 365-day returns that followed. |
+| `/api/x402/liqmap-levels` | $0.10 | Liquidation map for one Binance USDT-M perp: modeled leverage clusters plus real `forceOrder` levels across Binance, Bybit, OKX, Gate, HTX and Hyperliquid, top magnets, funding, OI and orderbook context. |
+| `/api/x402/liquidations-raw` | $0.10 | Individual liquidation events from our own sockets on Binance, Bybit, OKX, Gate, HTX, dYdX and Aster: side, price, quantity, notional, venue and millisecond timestamp. |
+| `/api/x402/funding-history` | $0.10 | Settled funding rates per venue and settlement, the series behind carry and basis work. |
+| `/api/x402/oi-history` | $0.10 | Five-minute open interest for the major perpetuals in base units and USD. |
+| `/api/x402/positioning-history` | $0.10 | Hourly long/short account and position ratios and taker buy/sell ratios for the 30 most traded perps. |
+| `/api/x402/options-flow` | $0.10 | BTC or ETH options tape from Deribit and OKX: daily premium-flow history plus the full big-print list. |
+| `/api/x402/options-oi-history` | $0.10 | Daily listed options open interest per instrument: strike, expiry, type, OI, mark IV, underlying price and traded notional. |
+| `/api/x402/orderbook-history` | $0.10 | Five-minute spot order book depth per venue for ten majors, binned into 0.1% buckets within 20% of mid. |
+| `/api/x402/spot-microstructure` | $0.10 | Minute bars with the taker buy versus total quote volume split, pre-joined across venues. |
+| `/api/x402/flow-vpin` | $0.10 | VPIN order-flow toxicity for BTC, ETH and SOL: 90-day daily track plus the last 500 volume buckets. |
+| `/api/x402/whale-trades-raw` | $0.10 | Every $1M+ aggressive print from our own trade sockets, kept 90 days. |
+| `/api/x402/hl-whale-events` | $0.10 | Position changes of the 300 largest Hyperliquid accounts: opened, closed, increased, reduced, flipped. |
+| `/api/x402/leverage-tiers-history` | $0.10 | Every recorded version of each perpetual's leverage ladder per venue, so leverage cuts can be dated. |
+| `/api/x402/networks-history` | $0.10 | Every recorded version of each venue's deposit and withdrawal network rows, so suspensions can be dated. |
+| `/api/x402/venue-markets-history` | $0.10 | Ten-minute price, 24h volume, open interest and funding snapshots per venue and symbol. |
+| `/api/x402/jupiter-history` | $0.10 | Hourly Jupiter Perps history per market and metric, including on-chain long and short open interest. |
+| `/api/x402/rsi-history` | $0.10 | Hourly RSI(14) history for Binance USDT perpetuals on eight intervals. |
+| `/api/x402/tradfi-oi-history` | $0.10 | Five-minute open interest for the top 40 Binance TradFi perpetuals. |
+| `/api/x402/tradfi-funding-history` | $0.10 | Settled funding rates for the top 40 Binance TradFi perpetuals. |
+| `/api/x402/turkey-premium-history` | $0.10 | Minute history of the Turkey premium index built from Turkish spot venues, with optional per-venue book rows. |
+| `/api/x402/cot-history` | $0.10 | Weekly CFTC Commitments of Traders history for crypto futures, including the dealer books. |
+| `/api/x402/indicators-events` | $0.10 | Every Bitcoin cycle indicator crossing since 2012 with the forward 7 to 365-day returns that followed. |
+| `/api/x402/liquidation-leaderboard-history` | $0.10 | Per-day ranking of the largest single liquidation prints across nine venues: up to 100 ranks per finalized UTC day with symbol, venue, side and notional. |
+| `/api/x402/insurance-fund-history` | $0.10 | Hourly insurance fund readings per pool on ten venues: balance, USD value and the contracts each pool covers. |
+| `/api/x402/tokenized-stocks-history` | $0.10 | Hourly readings per tokenized stock wrapper from nine issuers: price, reference, premium, liquidity and 24h volume with chain, issuer and day filters. |
 | `/api/x402/bulk-liquidations` | $15 | One-hour download links for monthly gzip CSV files of every recorded liquidation event. |
 | `/api/x402/bulk-derivatives` | $10 | One-hour download links for monthly files of open interest, funding settlements and venue snapshots. |
 | `/api/x402/bulk-flow` | $10 | One-hour download links for monthly files of whale prints, Hyperliquid whale events, positioning and RSI. |
